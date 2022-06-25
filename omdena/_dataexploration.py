@@ -48,5 +48,18 @@ uniquevalue('building_class') # 2 Unique Types
 uniquevalue('facility_type')
 # 60 different types
 
+# Data Count
+def datacount(col):
+    valuec = trainexplore[col].value_counts().reset_index()
+    valuec.rename(columns={'index':'Category',col:'Count'},inplace=True)
+    valuec['countper'] = round((valuec['Count']/trainexplore.shape[0])*100,2)
+    return valuec
 
+# Building Class
+datacount('building_class')
 
+# State_Factor
+datacount('State_Factor')
+
+# Facility Type
+datacount('facility_type')
