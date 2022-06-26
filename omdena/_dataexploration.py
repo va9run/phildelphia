@@ -62,4 +62,5 @@ datacount('building_class')
 datacount('State_Factor')
 
 # Facility Type
-datacount('facility_type')
+x = datacount('facility_type')
+

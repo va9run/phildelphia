@@ -7,3 +7,6 @@ warnings.filterwarnings('ignore')
 
 pd.set_option('max_rows',None)
 import missingno as mno
+
+import plotly.express as px
+from PIL import Image
