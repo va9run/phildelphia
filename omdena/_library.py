@@ -9,4 +9,6 @@ pd.set_option('max_rows',None)
 import missingno as mno
 
 import plotly.express as px
+import plotly.figure_factory as ff
+from plotly.subplots import make_subplots
 from PIL import Image
